@@ -9,12 +9,12 @@ int main(){
     int n,k,temp,op=0;
     cin>>n>>k;
 
-    priority_queue <int,vector<int>,greater<int>> pq;
+priority_queue <int,vector<int>,greater<int>> pq;
     for(int i=0; i<n; i++){
         cin>>temp;
         pq.push(temp);
     }
-
+    
     while(true){
         if(pq.top()>=k){
             break;
