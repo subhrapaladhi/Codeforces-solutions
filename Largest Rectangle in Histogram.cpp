@@ -33,6 +33,7 @@ int maxArea(vector<int>& height) {
         } else {
             area = height[tp]*(i-1-pos.top());
         }
+        maxarea = max(maxarea,area);
     }
     
     return maxarea;        
