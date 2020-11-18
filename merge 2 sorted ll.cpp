@@ -31,18 +31,13 @@ Node* mergeLists(Node* l1, Node* l2){
             p3 = p3->next;
         }
 
-        if(l1->val<=l2->val){
-            l1 = l1->next;
-        } else {
-            l2 = l2->next;
-        }
+        l1->val<=l2->val ? l1 = l1->next : l2 = l2->next;
     }
 
     if(head==NULL){
-        head = l1!=NULL?l1:l2;
-    } else {
-        p3 = l1!=NULL?l1:l2;
+        return l1!=NULL?l1:l2;
     }
+    p3 = l1!=NULL?l1:l2;
 
     return head;
 }
