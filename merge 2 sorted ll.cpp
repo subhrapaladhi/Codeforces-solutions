@@ -37,7 +37,7 @@ Node* mergeLists(Node* l1, Node* l2){
     if(head==NULL){
         return l1!=NULL?l1:l2;
     }
-    p3 = l1!=NULL?l1:l2;
+    p3->next = l1!=NULL?l1:l2;
 
     return head;
 }
