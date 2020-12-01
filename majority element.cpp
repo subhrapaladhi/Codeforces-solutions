@@ -27,7 +27,6 @@ pair<int,int> helper(vector<int> &nums, int l, int r){
 
 int majorityElement(vector<int> &nums){
     return helper(nums,0,nums.size()-1).first;
-
 }
 
 
